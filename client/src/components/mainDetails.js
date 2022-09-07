@@ -1,0 +1,22 @@
+import React from "react";
+
+const MainDetails = () => {
+
+  return (
+    <>
+      <header>I'm a MainDetails</header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus in. Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Sed arcu non odio euismod lacinia at. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Augue eget arcu dictum varius duis at. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Tellus id interdum velit laoreet. Urna et pharetra pharetra massa massa ultricies. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Viverra justo nec ultrices dui sapien eget mi. Viverra nam libero justo laoreet sit amet cursus sit. Viverra justo nec ultrices dui sapien. Eget est lorem ipsum dolor sit amet. Ut consequat semper viverra nam libero justo laoreet sit amet. Erat velit scelerisque in dictum.
+
+Commodo sed egestas egestas fringilla phasellus. Eu sem integer vitae justo eget magna fermentum iaculis. Faucibus in ornare quam viverra orci sagittis. Purus gravida quis blandit turpis cursus in hac habitasse. In tellus integer feugiat scelerisque varius. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Suspendisse in est ante in nibh mauris. Arcu non odio euismod lacinia at quis risus. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Vestibulum rhoncus est pellentesque elit. Dictum sit amet justo donec enim. Turpis egestas sed tempus urna et. Viverra adipiscing at in tellus integer. A arcu cursus vitae congue mauris rhoncus. Bibendum at varius vel pharetra vel turpis nunc. Euismod in pellentesque massa placerat. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper.
+
+Fringilla urna porttitor rhoncus dolor purus non enim praesent. Sem integer vitae justo eget magna. Sit amet commodo nulla facilisi nullam vehicula ipsum. Condimentum mattis pellentesque id nibh tortor id aliquet. Tortor aliquam nulla facilisi cras fermentum odio eu. Nisi quis eleifend quam adipiscing vitae. Bibendum at varius vel pharetra. Id semper risus in hendrerit gravida rutrum quisque non tellus. Cursus turpis massa tincidunt dui ut ornare lectus. Fringilla phasellus faucibus scelerisque eleifend donec. Morbi quis commodo odio aenean sed adipiscing. In aliquam sem fringilla ut morbi tincidunt. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sit amet consectetur adipiscing elit ut aliquam.
+
+Turpis cursus in hac habitasse platea dictumst. Senectus et netus et malesuada. Id donec ultrices tincidunt arcu. A cras semper auctor neque vitae tempus. Facilisis volutpat est velit egestas. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Nisl tincidunt eget nullam non nisi est. Ultrices sagittis orci a scelerisque purus semper eget. Sit amet justo donec enim diam vulputate ut pharetra. Risus viverra adipiscing at in. Consectetur a erat nam at. Vulputate enim nulla aliquet porttitor lacus luctus. Et sollicitudin ac orci phasellus. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Tortor consequat id porta nibh venenatis cras. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Senectus et netus et malesuada fames ac turpis egestas. Vulputate mi sit amet mauris commodo quis imperdiet.
+
+Interdum posuere lorem ipsum dolor sit amet consectetur. Suspendisse in est ante in nibh mauris cursus mattis molestie. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Tincidunt eget nullam non nisi est sit. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. A pellentesque sit amet porttitor eget dolor morbi. Rhoncus mattis rhoncus urna neque viverra. Ut venenatis tellus in metus vulputate eu. Consequat nisl vel pretium lectus quam id leo in vitae. Nullam non nisi est sit amet facilisis. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Ac orci phasellus egestas tellus rutrum tellus. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Quam adipiscing vitae proin sagittis.</p>
+
+    </>
+  );
+}
+
+export default MainDetails;
