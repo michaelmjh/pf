@@ -1,7 +1,12 @@
 import React from "react";
 import SideBarLeft from "./sideBarLeft";
 import SideBarRight from "./sideBarRight";
-import MainDetails from "./mainDetails";
+import MainLanding from "./mainLanding";
+import MainAbout from "./mainAbout";
+import MainExperience from "./mainExperience";
+import MainProjects from "./mainProjects";
+import MainFunStuff from "./mainFunStuff";
+import MainGetInTouch from "./mainGetInTouch";
 
 const MainBody = () => {
 
@@ -11,7 +16,12 @@ const MainBody = () => {
         <SideBarLeft />
       </div>    
       <div class='split center'>
-        <MainDetails />
+        <MainLanding />
+        <MainAbout />
+        <MainProjects />
+        <MainExperience />
+        <MainFunStuff />
+        <MainGetInTouch />
       </div>   
       <div class='split right'>
         <SideBarRight />

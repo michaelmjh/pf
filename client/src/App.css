@@ -24,8 +24,9 @@ ul {
 }
 
 li a:hover {
-  background-color: #fdd000;
-  text-shadow: 1px 1px #f3f3f3;
+  text-shadow: 1px 1px #fdd000;
+  text-decoration: underline;
+  text-decoration-color: #fdd000;
 }
 
 .split {
@@ -69,4 +70,98 @@ li a:hover {
 
 .sblitem {
   padding: 20%;
+}
+
+.sblitem:hover {
+  background-color: #fdd000;
+  
+}
+
+@font-face {
+  font-family: "kompot";
+  src: url('./media/fonts/KompotDisplayDemo-4BMmx.otf');
+}
+
+@font-face {
+  font-family: "limelight";
+  src: url('./media/fonts/Limelight.ttf');
+}
+
+p {
+  margin:0;
+  color: #262526;
+  text-decoration: none;
+  font-family: 'futura', futura, sans-serif;
+  padding:0;
+}
+
+.nametitle {
+  
+  font-family: 'kompot';
+  font-size: 1000%;
+  color: #131313;
+  text-shadow: 
+    1px 1px 1px #979697,
+    2px 2px 1px #9e9e9e,
+    3px 3px 1px #a6a5a6,
+    4px 4px 2px #adadad,
+    5px 5px 2px #b5b4b5,
+    6px 6px 2px #bcbcbc,
+    7px 7px 2px #c4c4c4,
+    8px 8px 2px #cccbcc,
+    9px 9px 2px #d3d3d3,
+    10px 10px 2px #dbdbdb,
+    11px 11px 2px #e3e3e3,
+    12px 12px 2px #ebebeb,
+    13px 13px 2px #f3f3f3;
+}
+
+.nameperiod {
+  color: #fdd000;
+}
+
+.sectionhead {
+  color: #262526;
+  text-decoration: none;
+  font-family: 'futura', futura, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+
+
+.subhead {
+  color: #262526;
+  text-decoration: none;
+  font-family: 'futura', futura, sans-serif;
+  font-weight: bold;
+}
+
+.subheadtagline {
+  color: #262526;
+  text-decoration: none;
+  font-family: 'futura', futura, sans-serif;
+  font-style: italic;
+}
+
+.mainaboutcontent {
+  display:flex;
+}
+
+.mainaboutblurb {
+  padding-left: 5%;
+}
+
+.mainprojectscontentleft {
+  display:flex;
+}
+
+.mainprojectscontentright{
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: left;
+}
+
+.mainprojectsimage {
+  padding-right: 5%;
 }

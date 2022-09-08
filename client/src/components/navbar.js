@@ -12,10 +12,10 @@ const NavBar = () => {
                 <a class='navBarButton' href="#news">Fun Stuff</a>
             </li>
             <li class='navBarItem'>
-                <a class='navBarButton' href="#contact">Projects</a>
+                <a class='navBarButton' href="#news">Experience</a>
             </li>
             <li class='navBarItem'>
-                <a class='navBarButton' href="#news">Experience</a>
+                <a class='navBarButton' href="#contact">Projects</a>
             </li>
             <li class='navBarItem'>
                 <a class='navBarButton' href="#home">About</a>
