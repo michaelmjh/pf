@@ -18,10 +18,10 @@ const MainBody = () => {
       <div class='split center'>
         <MainLanding />
         <MainAbout />
-        <MainProjects />
+        {/* <MainProjects />
         <MainExperience />
         <MainFunStuff />
-        <MainGetInTouch />
+        <MainGetInTouch /> */}
       </div>   
       <div class='split right'>
         <SideBarRight />

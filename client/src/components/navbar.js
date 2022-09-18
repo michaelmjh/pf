@@ -4,23 +4,23 @@ const NavBar = () => {
 
   return (
     <>
-        <ul class='navBar'>      
+        <ol class='navBar'>      
             <li class='navBarItem'>
                 <a class='navBarButton' href="#contact"><span>Get in Touch</span></a>
             </li>
             <li class='navBarItem'>
-                <a class='navBarButton' href="#news">Fun Stuff</a>
+                <a class='navBarButton' href="#fun">Fun Stuff</a>
             </li>
             <li class='navBarItem'>
-                <a class='navBarButton' href="#news">Experience</a>
+                <a class='navBarButton' href="#experience">Other Experience</a>
             </li>
             <li class='navBarItem'>
-                <a class='navBarButton' href="#contact">Projects</a>
+                <a class='navBarButton' href="#projects">Projects</a>
             </li>
             <li class='navBarItem'>
-                <a class='navBarButton' href="#home">About</a>
+                <a class='navBarButton' href="#about">About</a>
             </li>
-        </ul>
+        </ol>
         
     </>
   );
