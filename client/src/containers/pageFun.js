@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainFunStuff = () => {
+const PageFun = () => {
 
   return (
     <>
@@ -10,4 +10,4 @@ const MainFunStuff = () => {
   );
 }
 
-export default MainFunStuff;
+export default PageFun;

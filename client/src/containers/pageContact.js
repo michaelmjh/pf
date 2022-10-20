@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainGetInTouch = () => {
+const PageContact = () => {
 
   return (
     <>
@@ -10,4 +10,4 @@ const MainGetInTouch = () => {
   );
 }
 
-export default MainGetInTouch;
+export default PageContact;

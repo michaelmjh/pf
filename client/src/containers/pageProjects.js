@@ -3,7 +3,7 @@ import Baton from '../media/images/Baton.png'
 import Dillon from '../media/images/dillon.jpeg'
 import TopTrumps from '../media/images/toptrumps.png'
 
-const MainProjects = () => {
+const PageProjects = () => {
 
   return (
     <>
@@ -60,4 +60,4 @@ const MainProjects = () => {
   );
 }
 
-export default MainProjects;
+export default PageProjects;
