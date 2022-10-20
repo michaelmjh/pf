@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainLanding = () => {
+const PageHome = () => {
 
   return (
     <>
@@ -14,4 +14,4 @@ const MainLanding = () => {
   );
 }
 
-export default MainLanding;
+export default PageHome;

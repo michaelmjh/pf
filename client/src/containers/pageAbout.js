@@ -2,7 +2,7 @@ import React from "react";
 import Colors from '../media/images/color.png'
 import Portrait from '../media/images/Portrait.png'
 
-const MainAbout = () => {
+const PageAbout = () => {
 
   return (
     <>
@@ -288,4 +288,4 @@ const MainAbout = () => {
   );
 }
 
-export default MainAbout;
+export default PageAbout;

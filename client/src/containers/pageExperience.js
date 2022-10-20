@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainExperience = () => {
+const PageExperience = () => {
 
   return (
     <>
@@ -10,4 +10,4 @@ const MainExperience = () => {
   );
 }
 
-export default MainExperience;
+export default PageExperience;
