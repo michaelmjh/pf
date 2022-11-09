@@ -1,0 +1,23 @@
+.menuBar {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    height: 10vh;
+    align-items: center;
+}
+
+.menuButtonList {
+    display: flex;
+    list-style-type: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.menuButton {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.topMenu {
+    justify-content: end;
+}
