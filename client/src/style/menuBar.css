@@ -8,16 +8,31 @@
 
 .menuButtonList {
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
     list-style-type: none;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    background-color: brown;
 }
 
 .menuButton {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    height: 8vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuButton:hover {
+    background-color: blue;
 }
 
 .topMenu {
     justify-content: end;
+}
+
+.bottomMenu {
+    justify-content: left;
 }
