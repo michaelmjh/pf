@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import '../style/menuBar.css';
+import MenuButton from '../components/menuButton';
 
 function MenuBarBottom() {
 
@@ -8,30 +9,25 @@ function MenuBarBottom() {
         {
           'buttonText': 'Email',
           'buttonIcon': '',
-          'buttonLink': '/'
+          'buttonLink': 'mailto:michaelmjh@icloud.com'
         },
         {
           'buttonText': 'GitHub',
           'buttonIcon': '',
-          'buttonLink': '/'
+          'buttonLink': 'https://github.com/michaelmjh'
         },
         {
           'buttonText': 'LinkedIn',
           'buttonIcon': '',
-          'buttonLink': '/'
+          'buttonLink': 'https://linkedin.com/in/michaelmjh'
         },
       ];
 
     const buttonMapper = bottomButtonOptions.map((buttonOption, index) => {
-        const buttonText = buttonOption['buttonText'];
-        const buttonIcon = buttonOption['buttonIcon'];
-        const buttonLink = buttonOption['buttonLink'];
-
-        return (
-            <li className='menuButton'>
-                <p>{buttonText}</p>
-            </li>
-        )
+            return (
+                <MenuButton buttonOption={buttonOption}/>
+            )
+       
     })
 
     return (

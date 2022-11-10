@@ -2,6 +2,8 @@ import React from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import '../style/menuBar.css';
 
+import MenuButton from '../components/menuButton';
+
 function MenuBarTop() {
 
     const topButtonOptions = [
@@ -13,29 +15,24 @@ function MenuBarTop() {
         {
             'buttonText': 'About',
             'buttonIcon': '',
-            'buttonLink': '/'
+            'buttonLink': '/about'
         },
         {
             'buttonText': 'Projects',
             'buttonIcon': '',
-            'buttonLink': '/'
+            'buttonLink': '/projects'
         },
         {
             'buttonText': 'Fun Things',
             'buttonIcon': '',
-            'buttonLink': '/'
+            'buttonLink': '/fun'
         }
     ]
 
     const buttonMapper = topButtonOptions.map((buttonOption, index) => {
-        const buttonText = buttonOption['buttonText'];
-        const buttonIcon = buttonOption['buttonIcon'];
-        const buttonLink = buttonOption['buttonLink'];
         
         return (
-            <li className='menuButton'>
-                <p>{buttonText}</p>
-            </li>
+            <MenuButton buttonOption={buttonOption}/>
         )
     })
 
