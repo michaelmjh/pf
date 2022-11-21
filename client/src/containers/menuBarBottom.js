@@ -7,7 +7,7 @@ function MenuBarBottom() {
 
     const bottomButtonOptions = [
         {
-          'buttonText': 'Email',
+          'buttonText': 'Contact',
           'buttonIcon': '',
           'buttonLink': 'mailto:michaelmjh@icloud.com'
         },

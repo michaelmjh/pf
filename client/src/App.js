@@ -5,16 +5,34 @@ import './style/App.css';
 // Containers
 import MenuBarTop from './containers/menuBarTop';
 import MenuBarBottom from './containers/menuBarBottom';
-
-
-// Pages
+import PageHome from './containers/pageHome';
 
 function App() {
 
   return (
     <>
+      
+      <Router>
+        <Routes>
+          <Route exact path="/" element={
+            <PageHome />}
+          />
+          <Route exact path="/about" element={
+            <PageHome />}
+          />
+          <Route exact path="/projects" element={
+            <PageHome />}
+          />
+          <Route exact path="/fun" element={
+            <PageHome />}
+          />
+          <Route exact path="/contact" element={
+            <PageHome />}
+          />
+        </Routes>
+
+      </Router>
       <MenuBarTop />
-      <p>Page Container</p>
       <MenuBarBottom />
     </>
   )

@@ -1,10 +1,12 @@
-/* Colour values
-yellow: #fdd000;
-black: #262526;
-white: #f3f3f3;
-greyheavy: #7f8084;
-greymid: #afb2b7;
-greylight: #d7d8da; */
+/* Colour values */
+:root {
+    --yellow: #fdd000;
+    --black: #262526;
+    --white: #f3f3f3;
+    --greyheavy: #7f8084;
+    --greymid: #afb2b7;
+    --greylight: #d7d8da;
+}
 
 /* Fonts */
 @font-face {
@@ -15,4 +17,8 @@ greylight: #d7d8da; */
 @font-face {
     font-family: "limelight";
     src: url('../media/fonts/Limelight.ttf');
+}
+
+* {
+    background-color: var(--greylight);
 }
