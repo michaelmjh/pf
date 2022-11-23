@@ -19,7 +19,9 @@
     src: url('../media/fonts/Limelight.ttf');
 }
 
-.site {
-    display: flex;
-    flex-direction: row;
+.page {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 20vw;
+    background-color: var(--yellow);
 }

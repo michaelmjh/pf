@@ -3,37 +3,28 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './style/App.css';
 
 // Containers
-import MenuBarTop from './containers/menuBarTop';
-import MenuBarBottom from './containers/menuBarBottom';
-import PageHome from './containers/pageHome';
+import MenuContainer from './containers/menuContainer';
+import PageContainer from './containers/pageContainer';
 
 function App() {
 
-  return (
-    <>
-      
-      <Router>
-        <Routes>
-          <Route exact path="/" element={
-            <PageHome />}
-          />
-          <Route exact path="/about" element={
-            <PageHome />}
-          />
-          <Route exact path="/projects" element={
-            <PageHome />}
-          />
-          <Route exact path="/fun" element={
-            <PageHome />}
-          />
-          <Route exact path="/contact" element={
-            <PageHome />}
-          />
-        </Routes>
+    const [currentPage, setCurrentPage] = useState('')
 
-      </Router>
-      <MenuBarTop />
-      <MenuBarBottom />
+    useEffect(() => {
+        setCurrentPage('/')
+    }, []);
+
+    const updateCurrentPage = (link) => {
+        setCurrentPage(link)
+    }
+
+    return (
+    <>
+        <div className='site'>
+            <MenuContainer />
+            <PageContainer />
+        </div>
+        
     </>
   )
 
