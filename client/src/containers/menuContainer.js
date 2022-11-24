@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
 import '../style/menuContainer.css'
 
+// COMPONENTS
 import MenuBlurb from '../components/menuBlurb';
 import MenuOptions from '../components/menuOptions';
 
-function MenuContainer({updateCurrentPage}) {
+function MenuContainer() {
 
   return (
     <>
         <div className='menuBar'>
             <MenuBlurb />
-            <MenuOptions updateCurrentPage={updateCurrentPage}/>
+            <MenuOptions />
         </div>
     </>
   )

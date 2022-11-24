@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import '../style/menuContainer.css'
+import React from 'react';
+import '../style/menuContainer.css';
+
+// COMPONETS
 import MenuOption from './menuOption';
 
 function MenuOptions() {

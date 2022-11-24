@@ -19,9 +19,17 @@
     src: url('../media/fonts/Limelight.ttf');
 }
 
-.site {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    background-image: linear-gradient(to bottom right, var(--black), var(--white));
+.pageHome {
+    background-color: transparent;
+    display:flex;
+    align-items: end;
+    justify-content: end;
+    width: 60vw;
+    height: 90vh;
+}
+
+.pageHomeText {
+    margin-right: 5vh;
+    text-align: right;
+    color: var(--black);
 }

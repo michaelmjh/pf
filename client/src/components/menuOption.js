@@ -1,17 +1,36 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
 import '../style/menuContainer.css'
 
 function MenuOption({menuOption}) {
 
-    const handleLinkClick = () => {
-        console.log('fuck you js')
+    console.log(window.location.pathname)
+
+    if (menuOption['Link'] == window.location.pathname) {
+        return (
+            <>
+                <li className='menuOption'>
+                    <a className='menuText currentPage' >
+                        {menuOption['Text']}
+                    </a>
+                </li>
+            </>
+        )
+    } else {
+        return (
+            <>
+                <li className='menuOption'>
+                    <a className='menuText' href={menuOption['Link']} >
+                        {menuOption['Text']}
+                    </a>
+                </li>
+            </>
+        )
     }
 
     return (
         <>
             <li className='menuOption'>
-                <a className='menuText' href={menuOption['Link']} onClick={handleLinkClick} >
+                <a className='menuText' href={menuOption['Link']} >
                     {menuOption['Text']}
                 </a>
             </li>

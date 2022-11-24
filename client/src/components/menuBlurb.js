@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react';
 import '../style/menuContainer.css'
 
-import portrait from '../media/images/Portrait.png'
+// IMAGES
 import gitHubLogo from '../media/icons/github.png'
 import linkedInLogo from '../media/icons/linkedin.png'
 
@@ -33,7 +32,6 @@ function MenuBlurb() {
     <>
         <div className='menuBlurb'>
             <p className='nameHeader'>Michael Hughes</p>
-            {/* <img className='portrait' src={portrait} alt='Micahel Hughes' /> */}
             <p className='subtitleHeader'>Software Engineer</p>
             <div className='socialLinks'>
                 {buttonMapper}
@@ -41,7 +39,6 @@ function MenuBlurb() {
         </div>
     </>
   )
-
 };
 
 export default MenuBlurb;
