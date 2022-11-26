@@ -25,7 +25,7 @@
     height: 100vh;
     position: fixed;
     background-color: transparent;
-    color: var(--greylight);
+    color: var(--white);
 }
 
 /* MENU BLURB */
@@ -38,11 +38,11 @@
 
 .nameHeader {
     font-size: 300%;
+    font-weight: 100;
     margin: 0;
 }
 
 .subtitleHeader {
-
     margin: 0;
 }
 
@@ -72,16 +72,15 @@
 .menuOption {
     padding-top: 1vh;
     text-decoration: none;
-    color: var(--greylight);
 }
 
 a {
     text-decoration: none;
-    color: var(--greylight);
+    color: var(--white);
 }
 
 a:hover {
-    color: var(--greyheavy);
+    color: var(--greymid);
 }
 
 .currentPage {

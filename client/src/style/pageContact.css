@@ -1,0 +1,96 @@
+/* Colour values */
+:root {
+    --yellow: #fdd000;
+    --black: #262526;
+    --white: #f3f3f3;
+    --greyheavy: #7f8084;
+    --greymid: #afb2b7;
+    --greylight: #d7d8da;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "kompot";
+    src: url('../media/fonts/KompotDisplayDemo-4BMmx.otf');
+}
+  
+@font-face {
+    font-family: "limelight";
+    src: url('../media/fonts/Limelight.ttf');
+}
+
+.pageContact {
+    background-color: transparent;
+    display:flex;
+    align-items: end;
+    justify-content: end;
+    width: 60vw;
+    height: 90vh;
+}
+
+.pageContactFormContainer {
+    margin-right: 5vh;
+    text-align: right;
+    color: var(--black);
+}
+
+.field {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    order: -1;
+    padding-left: 5px;
+    transition: all 0.5s ease-in;
+    transform: translateY(2vh);
+    pointer-events: none;
+  }
+
+.inputBox:focus + label {
+    transform: translateY(-2px);
+  }
+
+.inputBox {
+    width: 30vw;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--greyheavy);
+    transition: 0.5s;
+}
+
+.inputBox:focus {
+    outline: none;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.messageBox {
+    resize: none;
+}
+
+.button {
+    width: 25%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4vh;
+    cursor: pointer;
+    align-self: end;
+    transition: 0.1s;
+}
+
+.button:hover {
+    color: var(--yellow);
+}
+
+.button:active {
+    background-color: var(--yellow);
+}

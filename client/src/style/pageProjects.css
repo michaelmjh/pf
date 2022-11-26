@@ -19,13 +19,15 @@
     src: url('../media/fonts/Limelight.ttf');
 }
 
-.pageAbout {
+.pP {
     background-color: transparent;
     display:flex;
     align-items: end;
     justify-content: end;
     width: 60vw;
     height: 90vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .pageAboutText {
@@ -34,31 +36,35 @@
     color: var(--black);
 }
 
-.pageAboutList {
+.pPProjectList {
     display:flex;
-    flex-wrap:wrap;
-    direction: rtl;
+    flex-direction: column;
     padding-right: 0;
     list-style: none;
+    margin-right: 5vh;
 }
 
-.technologyItem{
-    width:33%;
-}
-    
-.trainingItem{
-    width:100%;
-}
-
-.pageAboutHeading {
-    text-decoration: underline;
-    text-decoration-color: var(--yellow);
+.pPProject{
+    width: 50vw;
+    text-align: end;
+    border: 2px solid var(--greyheavy);
+    transition: 0.5s;
 }
 
-.pageAboutMainText {
-    font-size: 150%;
+.pPProject:hover {
+    border: 2px solid var(--yellow);
 }
 
-.pageAboutSubText {
+.pPProjectTitle {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 250%;
+    font-weight: 100;
+}
+
+.pPProjectSubTitle {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 1vh;
     font-weight: bold;
 }
