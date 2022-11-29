@@ -1,0 +1,105 @@
+/* Colour values */
+:root {
+    --yellow: #fdd000;
+    --black: #262526;
+    --white: #f3f3f3;
+    --greyheavy: #7f8084;
+    --greymid: #afb2b7;
+    --greylight: #d7d8da;
+}
+
+.mPContainer {
+    position: absolute;
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.3s;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+    }
+
+    .mPModal {
+        width: 50vw;
+        height: 90vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 5vh;
+        background-color: var(--black);
+        box-shadow: inset;
+        color: --white;
+        position: relative;
+
+        .mPClose {
+            position: absolute;
+            top: 1vh;
+            right: 1vh;
+            background-image: f('../media/icons/x-mark.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 3vh;
+            height: 3vh;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.mPCloseImage {
+    width: 3vh;
+    height: 3vh;
+}
+
+.mPProject {
+    color: var(--white);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    justify-content: end;
+    align-items: end;
+}
+
+.mPTitle {
+    font-size: 250%;
+    font-weight: 100;
+}
+
+.mPSubTitle {
+    margin-bottom: 1vh; 
+    font-weight: bold;
+}
+
+.mPButtonsContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4vh;
+    width: 100%;
+}
+
+.mPButton {
+    width: 25%;
+    background-color: var(--greylight);
+    color: var(--black);
+    text-align: center;
+    padding: 1vh;
+    border: none;
+    border-radius: 4vh;
+    cursor: pointer;
+    align-self: end;
+    transition: 0.2s;
+}
+
+.mPButton:hover {
+    background-color: var(--greymid);
+    color: var(--black);
+}
+
+.mPButton:active {
+    background-color: var(--yellow);
+}

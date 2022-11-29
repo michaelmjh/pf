@@ -1,0 +1,92 @@
+/* Colour values */
+:root {
+    --yellow: #fdd000;
+    --black: #262526;
+    --white: #f3f3f3;
+    --greyheavy: #7f8084;
+    --greymid: #afb2b7;
+    --greylight: #d7d8da;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "kompot";
+    src: url('../media/fonts/KompotDisplayDemo-4BMmx.otf');
+}
+  
+@font-face {
+    font-family: "limelight";
+    src: url('../media/fonts/Limelight.ttf');
+}
+
+/* MENU BAR */
+.menuBar {
+    width:40vw;
+    height: 100vh;
+    position: fixed;
+    background-color: transparent;
+    color: var(--white);
+}
+
+/* MENU BLURB */
+.menuBlurb {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 5vh;
+}
+
+.nameHeader {
+    font-size: 300%;
+    font-weight: 100;
+    margin: 0;
+}
+
+.subtitleHeader {
+    margin: 0;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.socialLogo {
+    width: 3vw;
+    padding-right: 1vw;
+}
+
+/* MENU OPTIONS */
+.menuOptions {
+    margin: 5vh;
+}
+
+.menuList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menuOption {
+    padding-top: 1vh;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--greymid);
+}
+
+.currentPage {
+    color: var(--yellow);
+}
+
+.currentPage:hover {
+    color: var(--yellow);
+    cursor: default;
+}
