@@ -8,17 +8,6 @@
     --greylight: #d7d8da;
 }
 
-/* Fonts */
-@font-face {
-    font-family: "kompot";
-    src: url('../media/fonts/KompotDisplayDemo-4BMmx.otf');
-}
-  
-@font-face {
-    font-family: "limelight";
-    src: url('../media/fonts/Limelight.ttf');
-}
-
 .mPContainer {
     position: absolute;
     display: flex;
@@ -38,8 +27,11 @@
     }
 
     .mPModal {
-        width: 90%;
-        height: 90%;
+        width: 50vw;
+        height: 90vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-bottom: 5vh;
         background-color: var(--black);
         box-shadow: inset;
         color: --white;
@@ -65,6 +57,49 @@
     height: 3vh;
 }
 
-.mPHeading {
+.mPProject {
     color: var(--white);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    justify-content: end;
+    align-items: end;
+}
+
+.mPTitle {
+    font-size: 250%;
+    font-weight: 100;
+}
+
+.mPSubTitle {
+    margin-bottom: 1vh; 
+    font-weight: bold;
+}
+
+.mPButtonsContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4vh;
+    width: 100%;
+}
+
+.mPButton {
+    width: 25%;
+    background-color: var(--greylight);
+    color: var(--black);
+    text-align: center;
+    padding: 1vh;
+    border: none;
+    border-radius: 4vh;
+    cursor: pointer;
+    align-self: end;
+    transition: 0.2s;
+}
+
+.mPButton:hover {
+    background-color: var(--greymid);
+    color: var(--black);
+}
+
+.mPButton:active {
+    background-color: var(--yellow);
 }

@@ -44,34 +44,98 @@
     margin-right: 5vh;
 }
 
-.pPProject{
+.pPProject {
     width: 50vw;
     text-align: end;
     border: 2px solid var(--greyheavy);
     transition: 0.5s;
     color: var(--black);
+    display: flex;
+    flex-direction: column;
 }
 
 .pPProject:hover {
     border: 2px solid var(--yellow);
+
+    .cPImage {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .cPHighlight {
+        color: var(--yellow);
+    }
 }
 
-.pPProjectTitle {
-    margin-left: 1vh;
-    margin-right: 1vh;
+.cPProjectContainer {
+    display: flex;
+    margin: 1vh;
+}
+
+.cPContent {
+    margin: 1vh;
+}
+
+.cPImage {
+    width: 10vw;
+    aspect-ratio: inherit;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.cPTitle {
     font-size: 250%;
     font-weight: 100;
+    margin-right: 1vh;
+
 }
 
-.pPProjectSubTitle {
+.cPSubTitle {
+    margin-right: 1vh;
+    text-align: end;
+    font-weight: bold;
+}
+
+.cPBlurb {
     margin-left: 1vh;
     margin-right: 1vh;
-    margin-bottom: 1vh; 
-    font-weight: bold;
+}
+
+.cPHighlight {
+    color: var(--black);
+    transition: 0.5s;
 }
 
 .toggleModal {
     display: block;
     cursor: pointer;
-    border: 1px solid black;
+}
+
+.cPButtonsContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.cPButton {
+    width: 25%;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1vh;
+    border: none;
+    border-radius: 4vh;
+    cursor: pointer;
+    align-self: end;
+    transition: 0.2s;
+}
+
+.cPButton:hover {
+    color: var(--yellow);
+}
+
+.cPButton:active {
+    background-color: var(--yellow);
 }

@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import '../style/pageProjects.css';
+import '../style/pageProjects.scss';
 
+import CompProject from './compProject';
 import Modal from './modalProject';
+
+import Baton from '../media/images/Baton.png'
+import Dillon from '../media/images/dillon.jpeg'
+import TT from '../media/images/toptrumps.png'
 
 function PageProjects() {
 
@@ -16,32 +21,39 @@ function PageProjects() {
     setSelectedProject()
   }
 
-  const projectOptions = [
+  const projectOptions = [ 
     {
       'Title': 'Music Elephant',
-      'SubTitle': 'CodeClan Capstone Group Project / 2022',
-      'Icon': '',
-      'Link': '/project'
-    },
+      'SubTitle': 'CodeClan Capstone Group Project',
+      'Date': '2022',
+      'Logo': Baton,
+      'GitLink': 'https://github.com/michaelmjh/capstoneMusicTheoryApp',
+      'LiveLink': '',
+      'Description': 'iOS app used to teach music theory through interactive lessons and quizzes, as well as allowing users to create and edit profiles.',
+      'Tech': ['Dart', 'Flutter', 'Java', 'PostgreSQL', 'Spring']
+    },  
     {
-      'Title': 'project_gym',
-      'SubTitle': 'CodeClan Solo Project / 2022',
-      'Icon': '',
-      'Link': '/project'
+      'Title': 'Big Guns Gym',
+      'SubTitle': 'CodeClan Solo Project',
+      'Date': '2022',
+      'Logo': Dillon,
+      'GitLink': 'https://github.com/michaelmjh/project_gym',
+      'LiveLink': '',
+      'Description': 'Web application designed to manage fitness classes and member bookings for a gym built with an MVC design pattern.',
+      'Tech': ['Dart', 'Flutter', 'Java', 'PostgreSQL', 'Spring']
     }
   ];
+ 
+  const projectMapper = projectOptions.map((project, index) => {
 
-  const projectMapper = projectOptions.map((projectOption, index) => {
-    
     return (
       <>
         
           <br/>
           <li className='pPProject toggleModal' key={index} onClick={toggleModal}>
-            <p className='pPProjectTitle'>{projectOption['Title']}</p>
-            <p className='pPProjectSubTitle'>{projectOption['SubTitle']}</p>
+            <CompProject project={project}/>
           </li>
-
+          
       </>
     )
   })
@@ -53,7 +65,7 @@ function PageProjects() {
           {projectMapper}
         </ul>
       </div>
-      <Modal modalState={modalState} toggleModal={toggleModal}/>
+ 
     </>
   )
 
