@@ -8,6 +8,7 @@ import PageAbout from '../components/pageAbout';
 import PageProjects from '../components/pageProjects';
 import PageFun from '../components/pageFun';
 import PageContact from '../components/pageContact';
+import Project from '../components/modalProject';
 
 function PageContainer() {
 

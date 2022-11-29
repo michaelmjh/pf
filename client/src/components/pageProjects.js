@@ -1,69 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../style/pageProjects.css';
 
+import Modal from './modalProject';
+
 function PageProjects() {
+
+  const [modalState,setModalState] = useState(false);
+  const [selectedProject, setSelectedProject] = useState({});
+
+  const toggleModal = () => {
+    setModalState(!modalState);
+  }
+
+  const toggleSelectedProject = (project) => {
+    setSelectedProject()
+  }
 
   const projectOptions = [
     {
       'Title': 'Music Elephant',
       'SubTitle': 'CodeClan Capstone Group Project / 2022',
-      'Icon': ''
+      'Icon': '',
+      'Link': '/project'
     },
     {
       'Title': 'project_gym',
       'SubTitle': 'CodeClan Solo Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'Music Elephant',
-      'SubTitle': 'CodeClan Capstone Group Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'project_gym',
-      'SubTitle': 'CodeClan Solo Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'Music Elephant',
-      'SubTitle': 'CodeClan Capstone Group Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'project_gym',
-      'SubTitle': 'CodeClan Solo Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'Music Elephant',
-      'SubTitle': 'CodeClan Capstone Group Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'project_gym',
-      'SubTitle': 'CodeClan Solo Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'Music Elephant',
-      'SubTitle': 'CodeClan Capstone Group Project / 2022',
-      'Icon': ''
-    },
-    {
-      'Title': 'project_gym',
-      'SubTitle': 'CodeClan Solo Project / 2022',
-      'Icon': ''
+      'Icon': '',
+      'Link': '/project'
     }
   ];
 
   const projectMapper = projectOptions.map((projectOption, index) => {
+    
     return (
       <>
-        <li className='pPProject' key={index}>
-          <p className='pPProjectTitle'>{projectOption['Title']}</p>
-          <p className='pPProjectSubTitle'>{projectOption['SubTitle']}</p>
-        </li>
-        <br/>
+        
+          <br/>
+          <li className='pPProject toggleModal' key={index} onClick={toggleModal}>
+            <p className='pPProjectTitle'>{projectOption['Title']}</p>
+            <p className='pPProjectSubTitle'>{projectOption['SubTitle']}</p>
+          </li>
+
       </>
     )
   })
@@ -71,12 +49,11 @@ function PageProjects() {
   return (
     <>
       <div className='pP'>
-          <ul className='pPProjectList'>
-            {projectMapper}
-          </ul>
-          <br />
-          <br />
-        </div>    
+        <ul className='pPProjectList'>
+          {projectMapper}
+        </ul>
+      </div>
+      <Modal modalState={modalState} toggleModal={toggleModal}/>
     </>
   )
 

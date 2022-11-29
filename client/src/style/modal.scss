@@ -1,0 +1,70 @@
+/* Colour values */
+:root {
+    --yellow: #fdd000;
+    --black: #262526;
+    --white: #f3f3f3;
+    --greyheavy: #7f8084;
+    --greymid: #afb2b7;
+    --greylight: #d7d8da;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "kompot";
+    src: url('../media/fonts/KompotDisplayDemo-4BMmx.otf');
+}
+  
+@font-face {
+    font-family: "limelight";
+    src: url('../media/fonts/Limelight.ttf');
+}
+
+.mPContainer {
+    position: absolute;
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.3s;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+    }
+
+    .mPModal {
+        width: 90%;
+        height: 90%;
+        background-color: var(--black);
+        box-shadow: inset;
+        color: --white;
+        position: relative;
+
+        .mPClose {
+            position: absolute;
+            top: 1vh;
+            right: 1vh;
+            background-image: f('../media/icons/x-mark.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 3vh;
+            height: 3vh;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.mPCloseImage {
+    width: 3vh;
+    height: 3vh;
+}
+
+.mPHeading {
+    color: var(--white);
+}
