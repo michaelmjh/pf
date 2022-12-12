@@ -26,6 +26,7 @@
     justify-content: end;
     width: 60vw;
     height: 90vh;
+    position: fixed;
 }
 
 .pageAboutText {
@@ -37,13 +38,22 @@
 .pageAboutList {
     display:flex;
     flex-wrap:wrap;
-    direction: rtl;
     padding-right: 0;
     list-style: none;
 }
 
+.pATechList {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 0;
+    list-style: none;
+    width: 55vw;
+}
+
 .technologyItem{
-    width:33%;
+    width:10%;
+    text-justify: center;
 }
     
 .trainingItem{
@@ -61,4 +71,8 @@
 
 .pageAboutSubText {
     font-weight: bold;
+}
+
+.highlight {
+    color: var(--yellow);
 }

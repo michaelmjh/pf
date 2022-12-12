@@ -8,7 +8,6 @@ import PageAbout from '../components/pageAbout';
 import PageProjects from '../components/pageProjects';
 import PageFun from '../components/pageFun';
 import PageContact from '../components/pageContact';
-import Project from '../components/modalProject';
 
 function PageContainer() {
 
@@ -26,9 +25,9 @@ function PageContainer() {
               <Route exact path="/projects" element={
                 <PageProjects />
               } />
-              <Route exact path="/fun" element={
+              {/* <Route exact path="/fun" element={
                 <PageFun />
-              }/>
+              }/> */}
               <Route exact path="/contact" element={
                 <PageContact />
               }/>

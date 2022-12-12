@@ -26,6 +26,7 @@
     justify-content: end;
     width: 60vw;
     height: 90vh;
+    position: fixed;
 }
 
 .pageHomeText {

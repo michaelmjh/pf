@@ -19,9 +19,28 @@
     src: url('../media/fonts/Limelight.ttf');
 }
 
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    padding:100%;    
+    margin: 0;
+    background-image: linear-gradient(to bottom right, var(--black), var(--white));
+    background-color: transparent;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
 .site {
     display: flex;
     flex-direction: row;
-    position: fixed;
-    background-image: linear-gradient(to bottom right, var(--black), var(--white));
 }

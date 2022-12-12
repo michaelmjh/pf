@@ -10,6 +10,7 @@ function App() {
 
     return (
     <>
+        <img className='background'></img>
         <div className='site'>
 			<ParticleContainer />
             <MenuContainer />

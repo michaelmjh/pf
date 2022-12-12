@@ -19,10 +19,10 @@ function MenuOptions() {
             'Text': 'Projects',
             'Link': '/projects'
         },
-        {
-            'Text': 'Fun Things',
-            'Link': '/fun'
-        },
+        // {
+        //     'Text': 'Fun Things',
+        //     'Link': '/fun'
+        // },
         {
             'Text': 'Contact',
             'Link': '/contact'

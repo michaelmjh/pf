@@ -5,7 +5,7 @@ function PageAbout() {
 
   const techOptions = [
     {
-      'Text': 'JavaScript',
+      'Text': 'CSS',
       'Icon': ''
     },
     {
@@ -13,15 +13,7 @@ function PageAbout() {
       'Icon': ''
     },
     {
-      'Text': 'CSS',
-      'Icon': ''
-    },
-    {
-      'Text': 'SQL',
-      'Icon': ''
-    },
-    {
-      'Text': 'React',
+      'Text': 'JavaScript',
       'Icon': ''
     },
     {
@@ -29,7 +21,15 @@ function PageAbout() {
       'Icon': ''
     },
     {
+      'Text': 'React',
+      'Icon': ''
+    },
+    {
       'Text': 'SQL Server',
+      'Icon': ''
+    },
+    {
+      'Text': 'XML',
       'Icon': ''
     }
   ];
@@ -37,7 +37,7 @@ function PageAbout() {
   const techMapper = techOptions.map((techOption, index) => {
     return (
       <li className='technologyItem' key={index}>
-        <p className='pageAboutMainText'>{techOption['Text']}</p>
+        <p className=''>{techOption['Text']}</p>
       </li>
     )
   })
@@ -45,15 +45,16 @@ function PageAbout() {
   const workXpOptions = [
     {
       'MainText': 'Data Technician',
-      'SubText': 'Jacobs / 2022 - Present'
+      'SubText': 'Jacobs',
+      'Date': '2022 - Present'
     }
   ];
 
-  const workXpMapper = workXpOptions.map((WorkXpOption, index) => {
+  const workXpMapper = workXpOptions.map((workXpOption, index) => {
     return (
       <li className='trainingItem'>
-        <p className='pageAboutMainText'>{WorkXpOption['MainText']}</p>
-        <p className='pageAboutSubText'>{WorkXpOption['SubText']}</p>
+        <p className='pageAboutMainText'>{workXpOption['MainText']}</p>
+        <p className='pageAboutSubText'>{workXpOption['SubText']} <span className='highlight'>/</span> {workXpOption['Date']}</p>
       </li>
     )
   })
@@ -61,7 +62,8 @@ function PageAbout() {
   const trainingOptions = [
     {
       'MainText': 'Professional Software Development',
-      'SubText': 'CodeClan / 2022'
+      'SubText': 'CodeClan',
+      'Date': '2022'
     }
   ];
 
@@ -69,7 +71,7 @@ function PageAbout() {
     return (
       <li className='trainingItem'>
         <p className='pageAboutMainText'>{trainingOption['MainText']}</p>
-        <p className='pageAboutSubText'>{trainingOption['SubText']}</p>
+        <p className='pageAboutSubText'>{trainingOption['SubText']} <span className='highlight'>/</span> {trainingOption['Date']}</p>
       </li>
     )
   })
@@ -79,7 +81,7 @@ function PageAbout() {
       <div className='pageAbout'>
         <div className='pageAboutText'>
           <p className='pageAboutHeading'>Recent Technologies</p>
-          <ul className='pageAboutList'>
+          <ul className='pATechList'>
             {techMapper}
           </ul>
           <br />
