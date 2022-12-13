@@ -24,7 +24,7 @@ function MenuOptions() {
         //     'Link': '/fun'
         // },
         {
-            'Text': 'Contact',
+            'Text': 'Get in Touch',
             'Link': '/contact'
         },
     ];

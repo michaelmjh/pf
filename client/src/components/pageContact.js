@@ -10,31 +10,26 @@ function PageContact() {
                 <div className='pageContactFormContainer'>
                     <form className='pageContactForm'>
                         <div className='field'>
-                            <input className='inputBox' autoFocus></input>
                             <label>Name</label>
+                            <input className='inputBox' autoFocus></input>
                             <br/>
                         </div>
                         <div className='field'>
-                            <input className='inputBox'></input>
                             <label>Email</label>
+                            <input className='inputBox'></input>
                             <br/>
                         </div>
                         <div className='field'>
-                            <input className='inputBox'></input>
-                                <label>Subject</label>
-                                <br/>
-                            </div>
+                            <label>Subject</label>
+                            <input className='inputBox'></input> 
+                            <br/>
+                        </div>
                         <div className='field'>
-                            <textarea className='inputBox messageBox' rows = "10" name = "message">
-                                
-                            </textarea>
                             <label>Message</label>
+                            <textarea className='inputBox messageBox' rows = "10" name = "message"></textarea>
                             <br/>
                         </div>
                         <input className='button' type="submit" value="Submit"></input>
-                        
-                        
-                        
                     </form>
                 </div>
             </div>       

@@ -2,8 +2,8 @@ import React from 'react';
 import '../style/menuContainer.css'
 
 // IMAGES
-import gitHubLogo from '../media/icons/github.png'
-import linkedInLogo from '../media/icons/linkedin.png'
+import gitHubLogo from '../media/icons/GitHubLogo.png'
+import linkedInLogo from '../media/icons/LinkedInLogo.png'
 
 function MenuBlurb() {
 

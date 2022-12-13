@@ -44,6 +44,7 @@
 
 .subtitleHeader {
     margin: 0;
+    font-weight: bold;
 }
 
 .socialLinks {
@@ -56,6 +57,10 @@
 .socialLogo {
     width: 3vw;
     padding-right: 1vw;
+}
+
+.socialLogo:hover {
+    background-image: url('../media/icons/BGYellow.png');
 }
 
 /* MENU OPTIONS */

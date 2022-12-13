@@ -26,16 +26,6 @@ function MenuOption({menuOption}) {
             </>
         )
     }
-
-    return (
-        <>
-            <li className='menuOption'>
-                <a className='menuText' href={menuOption['Link']} >
-                    {menuOption['Text']}
-                </a>
-            </li>
-        </>
-    )
 };
 
 export default MenuOption;

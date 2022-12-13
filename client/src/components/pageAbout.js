@@ -78,24 +78,24 @@ function PageAbout() {
 
   return (
     <>
-      <div className='pageAbout'>
-        <div className='pageAboutText'>
-          <p className='pageAboutHeading'>Recent Technologies</p>
+      <div className='pAContainer'>
+        <div className='pAText'>
+          <p className='pAHeading'>Recent Technologies</p>
           <ul className='pATechList'>
             {techMapper}
           </ul>
           <br />
           <br />
           
-          <p className='pageAboutHeading'>Industry Experience</p>
-          <ul className='pageAboutList'>
+          <p className='pAHeading'>Industry Experience</p>
+          <ul className='pAList'>
             {workXpMapper}
           </ul>
           <br />
           <br />
 
-          <p className='pageAboutHeading'>Professional Training</p>
-          <ul className='pageAboutList'>
+          <p className='pAHeading'>Professional Training</p>
+          <ul className='pAList'>
             {trainingMapper}
           </ul>
         </div>

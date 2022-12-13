@@ -46,6 +46,7 @@
     .cPImage {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
+        scale: 100%;
     }
 
     .cPHighlight {
@@ -55,7 +56,7 @@
     .cPTechLogo {
         scale: 70%;
         transition: 0.5s;
-        
+        background: url('../media/icons/BGYellow.png');
     }
 
     .cPTechText {
@@ -70,11 +71,12 @@
 }
 
 .cPImage {
-    width: 23%;
+    width: 22%;
     aspect-ratio: 2/3;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: 0.5s;
+    scale: 80%
 }
 
 .cPTechList {
@@ -105,8 +107,8 @@
 }
 
 .cPTitle {
-    font-size: 250%;
-    font-weight: 100;
+    font-size: 200%;
+    font-weight: 175;
     margin-right: 1vh;
 }
 
@@ -137,12 +139,17 @@
     background-color: var(--black);
     color: var(--white);
     text-align: center;
-    padding: 1vh;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
     border-radius: 4vh;
     cursor: pointer;
     align-self: end;
     transition: 0.2s;
+    width: 30%;
+    font-size: 100%;
+    font-weight: bold;
 }
 
 .cPButton:hover {
