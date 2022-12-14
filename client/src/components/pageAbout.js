@@ -1,43 +1,93 @@
 import React from 'react';
-import '../style/pageAbout.css'
+import '../style/pageAbout.scss'
+
+import CSSLogo from '../media/icons/CSSLogo.png'
+import DartLogo from '../media/icons/DartLogo.png'
+import ExpressLogo from '../media/icons/ExpressLogo.png'
+import FlaskLogo from '../media/icons/FlaskLogo.png'
+import FlutterLogo from '../media/icons/FlutterLogo.png'
+import HTMLLogo from '../media/icons/HTMLLogo.png'
+import JavaLogo from '../media/icons/JavaLogo.png'
+import JavaScriptLogo from '../media/icons/JavaScriptLogo.png'
+import PostgreSQLLogo from '../media/icons/PostgreSQLLogo.png'
+import PythonLogo from '../media/icons/PythonLogo.png'
+import ReactLogo from '../media/icons/ReactLogo.png'
+import SpringLogo from '../media/icons/SpringLogo.png'
+import SQLiteLogo from '../media/icons/SQLiteLogo.png'
+import SQLServerLogo from '../media/icons/SQLServerLogo.png'
 
 function PageAbout() {
 
-  const techOptions = [
+  const techList = [
     {
-      'Text': 'CSS',
-      'Icon': ''
+      'Name': 'CSS',
+      'Icon': CSSLogo
     },
     {
-      'Text': 'HTML 5',
-      'Icon': ''
+      'Name': 'Dart',
+      'Icon': DartLogo
     },
     {
-      'Text': 'JavaScript',
-      'Icon': ''
+      'Name': 'Express',
+      'Icon': ExpressLogo
     },
     {
-      'Text': 'Python 3',
-      'Icon': ''
+      'Name': 'Flask',
+      'Icon': FlaskLogo
     },
     {
-      'Text': 'React',
-      'Icon': ''
+      'Name': 'Flutter',
+      'Icon': FlutterLogo
     },
     {
-      'Text': 'SQL Server',
-      'Icon': ''
+      'Name': 'HTML',
+      'Icon': HTMLLogo
     },
     {
-      'Text': 'XML',
-      'Icon': ''
+      'Name': 'Java',
+      'Icon': JavaLogo
+    },
+    {
+      'Name': 'JavaScript',
+      'Icon': JavaScriptLogo
+    },
+    {
+      'Name': 'PostgreSQL',
+      'Icon': PostgreSQLLogo
+    },
+    {
+      'Name': 'Python',
+      'Icon': PythonLogo
+    },
+    {
+      'Name': 'React',
+      'Icon': ReactLogo
+    },
+    {
+      'Name': 'Spring',
+      'Icon': SpringLogo
+    },
+    {
+      'Name': 'SQLite3',
+      'Icon': SQLiteLogo
+    },
+    {
+      'Name': 'SQL Server',
+      'Icon': SQLServerLogo
     }
-  ];
+  ]
 
-  const techMapper = techOptions.map((techOption, index) => {
+  const recentTechOptions = [
+    'CSS', 'HTML', 'JavaScript', 'Python', 'React', 'SQL Server'];
+
+  const techMapper = recentTechOptions.map((techOption, index) => {
+    let logo = techList.find(e => e['Name'] == techOption);
+    console.log(logo)
+    
     return (
-      <li className='technologyItem' key={index}>
-        <p className=''>{techOption['Text']}</p>
+      <li className='pATechItem' key={index}>
+        <img className='pATechLogo' src={logo['Icon']}/>
+        <p className='pATechText'>{logo['Name']}</p>
       </li>
     )
   })
@@ -54,7 +104,7 @@ function PageAbout() {
     return (
       <li className='trainingItem'>
         <p className='pageAboutMainText'>{workXpOption['MainText']}</p>
-        <p className='pageAboutSubText'>{workXpOption['SubText']} <span className='highlight'>/</span> {workXpOption['Date']}</p>
+        <p className='pageAboutSubText'>{workXpOption['SubText']} <span className='pAHighlight'>/</span> {workXpOption['Date']}</p>
       </li>
     )
   })
@@ -71,7 +121,7 @@ function PageAbout() {
     return (
       <li className='trainingItem'>
         <p className='pageAboutMainText'>{trainingOption['MainText']}</p>
-        <p className='pageAboutSubText'>{trainingOption['SubText']} <span className='highlight'>/</span> {trainingOption['Date']}</p>
+        <p className='pageAboutSubText'>{trainingOption['SubText']} <span className='pAHighlight'>/</span> {trainingOption['Date']}</p>
       </li>
     )
   })
@@ -79,21 +129,20 @@ function PageAbout() {
   return (
     <>
       <div className='pAContainer'>
-        <div className='pAText'>
+        
+        <div className='pASection'>
           <p className='pAHeading'>Recent Technologies</p>
           <ul className='pATechList'>
             {techMapper}
           </ul>
-          <br />
-          <br />
-          
+        </div>
+        <div className='pASection'> 
           <p className='pAHeading'>Industry Experience</p>
           <ul className='pAList'>
             {workXpMapper}
           </ul>
-          <br />
-          <br />
-
+        </div>
+        <div className='pASection'>
           <p className='pAHeading'>Professional Training</p>
           <ul className='pAList'>
             {trainingMapper}

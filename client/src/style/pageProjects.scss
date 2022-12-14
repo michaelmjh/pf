@@ -27,12 +27,13 @@
     flex-direction: column;
     padding-right: 0;
     list-style: none;
-    margin-right: 4vh;
+    margin-right: 5vh;
 }
 
 .pPProject {
     width: 60vw;
     text-align: end;
+    margin-top: 1vh;
     border: 2px solid var(--greyheavy);
     transition: 0.5s;
     color: var(--black);
@@ -55,6 +56,7 @@
 
     .cPTechLogo {
         scale: 70%;
+        box-shadow: 0 0 0 1px var(--yellow);
         transition: 0.5s;
         background: url('../media/icons/BGYellow.png');
     }
@@ -71,7 +73,7 @@
 }
 
 .cPImage {
-    width: 22%;
+    width: 25%;
     aspect-ratio: 2/3;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -80,19 +82,20 @@
 }
 
 .cPTechList {
-    width: 20%;
+    margin-top: 0;
+    width: 25%;
 }
 
 .cPTech {
     display: flex;
-    margin: 1vh;
     align-items: center;
 }
 
 .cPTechLogo {
     width: 3vw;
-    padding-right: 1vw;
+    margin-bottom: 1vh;
     transition: 0.5s;
+    border-radius: 50%;
 }
 
 .cPTechText {
@@ -102,8 +105,7 @@
 }
 
 .cPContent {
-    margin: 1vh;
-    width: 60%;
+    width: 50%;
 }
 
 .cPTitle {

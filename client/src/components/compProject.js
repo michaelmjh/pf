@@ -101,8 +101,8 @@ function CompProject({project}) {
           {techMapper}
         </ul>
         <div className='cPContent'>
-          <p className='cPTitle'>{project['Title']} </p>
           <p className='cPSubTitle'>{project['SubTitle']} <span className='cPHighlight'>/</span> {project['Date']}</p>
+          <p className='cPTitle'>{project['Title']} </p>
         
           <p className='cPBlurb'>{project['Description']}</p>
           <div className='cPButtonsContainer'>
